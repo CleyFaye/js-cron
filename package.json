@@ -1,6 +1,6 @@
 {
   "name": "@cley_faye/js-cron",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Manage scheduled tasks in-process using cron definitions",
   "main": "lib/jscron.js",
   "scripts": {
