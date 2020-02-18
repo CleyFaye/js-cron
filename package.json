@@ -4,7 +4,7 @@
   "description": "Manage scheduled tasks in-process using cron definitions",
   "main": "lib/jscron.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepack": "npx grunt clean build"
   },
   "repository": {
     "type": "git",
@@ -32,5 +32,8 @@
     "grunt-ts": "^6.0.0-beta.22",
     "load-grunt-tasks": "^5.1.0",
     "typescript": "^3.7.5"
-  }
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
