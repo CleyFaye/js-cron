@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    ".tscache": true,
+    "lib": true,
+    "node_modules": true
+  }
+}

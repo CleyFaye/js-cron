@@ -1,0 +1,36 @@
+{
+  "name": "@cley_faye/js-cron",
+  "version": "0.1.0",
+  "description": "Manage scheduled tasks in-process using cron definitions",
+  "main": "lib/jscron.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CleyFaye/js-cron.git"
+  },
+  "author": "Gabriel Paul \"Cley Faye\" Risterucci",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/CleyFaye/js-cron/issues"
+  },
+  "homepage": "https://github.com/CleyFaye/js-cron#readme",
+  "dependencies": {
+    "cron-parser": "^2.13.0"
+  },
+  "devDependencies": {
+    "@cley_faye/eslint-config": "^0.2.5",
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "esm": "^3.2.25",
+    "grunt": "^1.0.4",
+    "grunt-banner": "^0.6.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-ts": "^6.0.0-beta.22",
+    "load-grunt-tasks": "^5.1.0",
+    "typescript": "^3.7.5"
+  }
+}
