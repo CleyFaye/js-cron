@@ -2,7 +2,7 @@ const loadGruntTasks = require("load-grunt-tasks");
 const {readFileSync} = require("fs");
 
 const BUILD_DIR = "lib";
-const LICENSE_FILE = "LICENSE.js";
+const LICENSE_FILE = "header.js";
 
 module.exports = (grunt) => {
   loadGruntTasks(grunt);

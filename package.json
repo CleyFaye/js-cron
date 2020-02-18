@@ -11,7 +11,7 @@
     "url": "git+https://github.com/CleyFaye/js-cron.git"
   },
   "author": "Gabriel Paul \"Cley Faye\" Risterucci",
-  "license": "GPL-3.0-or-later",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/CleyFaye/js-cron/issues"
   },
