@@ -4,7 +4,7 @@ const {readFileSync} = require("fs");
 const BUILD_DIR = "lib";
 const LICENSE_FILE = "header.js";
 
-module.exports = (grunt) => {
+module.exports = grunt => {
   loadGruntTasks(grunt);
   grunt.initConfig({
     clean: {
