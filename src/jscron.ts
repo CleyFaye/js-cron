@@ -8,6 +8,10 @@ import ScheduledTask from "./scheduledtask";
 
 const scheduledTasks: Array<ScheduledTask> = [];
 
+export {
+    Overrun,
+};
+
 /**
  * Set default values for task options
  */
