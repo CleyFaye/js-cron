@@ -84,7 +84,7 @@ export default class ScheduledTask {
       result = result.then(() => this._func());
     }
     return result
-      .catch((error) => logError(error))
+      .catch(error => logError(error))
       .then(() => this._reschedule());
   }
 

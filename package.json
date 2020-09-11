@@ -17,21 +17,21 @@
   },
   "homepage": "https://github.com/CleyFaye/js-cron#readme",
   "dependencies": {
-    "cron-parser": "^2.13.0"
+    "cron-parser": "^2.16.3"
   },
   "devDependencies": {
-    "@cley_faye/eslint-config": "^0.3.1",
-    "@typescript-eslint/eslint-plugin": "^2.26.0",
-    "@typescript-eslint/parser": "^2.26.0",
-    "eslint": "^6.8.0",
+    "@cley_faye/eslint-config": "^1.0.4",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "eslint": "^7.8.1",
     "eslint-plugin-promise": "^4.2.1",
     "esm": "^3.2.25",
-    "grunt": "^1.1.0",
+    "grunt": "^1.3.0",
     "grunt-banner": "^0.6.0",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-ts": "^6.0.0-beta.22",
     "load-grunt-tasks": "^5.1.0",
-    "typescript": "^3.8.3"
+    "typescript": "^4.0.2"
   },
   "files": [
     "lib/**/*"

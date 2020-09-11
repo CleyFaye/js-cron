@@ -8,9 +8,7 @@ import ScheduledTask from "./scheduledtask";
 
 const scheduledTasks: Array<ScheduledTask> = [];
 
-export {
-    Overrun,
-};
+export {Overrun};
 
 /**
  * Set default values for task options
@@ -47,6 +45,6 @@ export const schedule = (
 };
 
 export const stop = (): void => {
-  scheduledTasks.forEach((task) => task.cancel());
+  scheduledTasks.forEach(task => task.cancel());
   scheduledTasks.length = 0;
 };

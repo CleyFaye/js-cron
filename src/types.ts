@@ -15,10 +15,12 @@ export enum Overrun {
   /**
    * Skip this start
    */
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   SKIP = "skip",
   /**
    * Immediately restart the task once it finish
    */
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   AFTER = "after",
 }
 
