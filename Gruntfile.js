@@ -15,7 +15,14 @@ module.exports = grunt => {
       ],
     },
     // eslint-disable-next-line id-length
-    ts: {build: {tsconfig: "./tsconfig.json"}},
+    ts: {
+      build: {
+        tsconfig: {
+          tsconfig: "./",
+          passThrough: true,
+        },
+      },
+    },
     usebanner: {
       build: {
         options: {banner: readFileSync(LICENSE_FILE, "utf8")},
