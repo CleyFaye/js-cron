@@ -22,10 +22,10 @@ Installation
 ------------
 
 The library is provided on
-[npmjs](https://www.npmjs.com/package/@cley_faye/js-node).
+[npmjs](https://www.npmjs.com/package/@cley_faye/js-cron).
 
 ```bash
-npm install @cley_faye/js-node
+npm install @cley_faye/js-cron
 ```
 
 Usage
