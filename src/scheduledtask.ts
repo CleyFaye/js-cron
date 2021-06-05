@@ -3,8 +3,8 @@ import {
   TaskFunction,
   Overrun,
   CompleteTaskOptions,
-} from "./types";
-import {logError} from "./logger";
+} from "./types.js";
+import {logError} from "./logger.js";
 
 /**
  * Maximum delay for a timeout.

@@ -4,12 +4,14 @@
   "description": "Manage scheduled tasks in-process using cron definitions",
   "main": "lib/jscron.js",
   "scripts": {
-    "prepack": "npx grunt clean build"
+    "prepack": "npm run grunt -- clean build",
+    "grunt": "npm exec grunt -- --gruntfile Gruntfile.cjs"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CleyFaye/js-cron.git"
   },
+  "type": "module",
   "author": "Gabriel Paul \"Cley Faye\" Risterucci",
   "license": "MIT",
   "bugs": {

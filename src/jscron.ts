@@ -3,8 +3,8 @@ import {
   TaskOptions,
   Overrun,
   CompleteTaskOptions,
-} from "./types";
-import ScheduledTask from "./scheduledtask";
+} from "./types.js";
+import ScheduledTask from "./scheduledtask.js";
 
 const scheduledTasks: Array<ScheduledTask> = [];
 

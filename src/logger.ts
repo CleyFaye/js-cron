@@ -1,4 +1,4 @@
-import {LoggerFunction} from "./types";
+import {LoggerFunction} from "./types.js";
 
 // eslint-disable-next-line no-console
 let loggerFunction: LoggerFunction = console.error;
