@@ -2,7 +2,15 @@ const loadGruntTasks = require("load-grunt-tasks");
 const {readFileSync} = require("fs");
 
 const BUILD_DIR = "lib";
-const LICENSE_FILE = "header.js";
+
+const licenseJS = [
+  "/**",
+  " * @license",
+  " * @preserve",
+  ...readFileSync("LICENSE", "utf8").split("\n")
+    .map(c => ` * ${c}`),
+  " */",
+].join("\n");
 
 module.exports = grunt => {
   loadGruntTasks(grunt);
@@ -10,11 +18,13 @@ module.exports = grunt => {
     clean: {
       build: [
         BUILD_DIR,
+      ],
+      cache: [
+        ".cache",
         ".tscache",
-        "tsconfig.tsbuildinfo",
+        ".tsbuildinfo",
       ],
     },
-    // eslint-disable-next-line id-length
     ts: {
       build: {
         tsconfig: {
@@ -25,7 +35,7 @@ module.exports = grunt => {
     },
     usebanner: {
       build: {
-        options: {banner: readFileSync(LICENSE_FILE, "utf8")},
+        options: {banner: licenseJS},
         files: [
           {
             expand: true,
