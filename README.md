@@ -23,6 +23,7 @@ Installation
 
 The library is provided on
 [npmjs](https://www.npmjs.com/package/@cley_faye/js-node).
+
 ```bash
 npm install @cley_faye/js-node
 ```
@@ -31,6 +32,7 @@ Usage
 -----
 
 ### Schedule a task
+
 ```JavaScript
 import {
   schedule,
@@ -61,6 +63,7 @@ The syntax for the cron argument is parsed using
 ### Options
 The only option supported for now is `overrun`. It can take the following
 values:
+
 - `Overrun.SKIP`: if the previous occurrence is still running, skip the new one
   until we reach the next scheduled time (default)
 - `Overrun.AFTER`: if the previous occurrence is still running, run the new step
@@ -68,6 +71,7 @@ values:
 
 ### Control the scheduler
 You can stop all scheduling at once by calling `stop()`:
+
 ```JavaScript
 import {stop} from "@cley_faye/js-cron";
 
