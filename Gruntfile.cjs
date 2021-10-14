@@ -25,12 +25,10 @@ module.exports = grunt => {
         ".tsbuildinfo",
       ],
     },
-    ts: {
-      build: {
-        tsconfig: {
-          tsconfig: "./",
-          passThrough: true,
-        },
+    run: {
+      tsbuild: {
+        cmd: "npx",
+        args: ["tsc"],
       },
     },
     usebanner: {
@@ -51,7 +49,7 @@ module.exports = grunt => {
     "build",
     "Build the library for release",
     [
-      "ts:build",
+      "run:tsbuild",
       "usebanner:build",
     ],
   );
