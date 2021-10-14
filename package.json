@@ -5,7 +5,7 @@
   "main": "lib/jscron.js",
   "scripts": {
     "prepack": "npm run grunt -- clean build",
-    "grunt": "npm exec grunt -- --gruntfile Gruntfile.cjs"
+    "grunt": "npx grunt --gruntfile Gruntfile.cjs"
   },
   "repository": {
     "type": "git",
