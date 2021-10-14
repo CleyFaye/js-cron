@@ -1,5 +1,5 @@
-const loadGruntTasks = require("load-grunt-tasks");
 const {readFileSync} = require("fs");
+const loadGruntTasks = require("load-grunt-tasks");
 
 const BUILD_DIR = "lib";
 
