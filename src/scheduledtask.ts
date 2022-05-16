@@ -76,16 +76,20 @@ export default class ScheduledTask {
    * All special cases are handled there (task already running).
    * Updating the next value is also handled here.
    */
-  private _run(): Promise<void> {
+  private async _run(): Promise<void> {
     this._timeoutHandler = null;
-    let result = Promise.resolve();
     if (this.runnable) {
       this._lastRun = Date.now();
-      result = result.then(() => this._func());
+      try {
+        await this._func();
+      } catch (error) {
+        if (error instanceof Error) {
+          logError(error);
+        }
+        logError(new Error(`Unknown error: ${(error as string).toString()}`));
+      }
     }
-    return result
-      .catch(error => logError(error))
-      .then(() => this._reschedule());
+    this._reschedule();
   }
 
   /**
