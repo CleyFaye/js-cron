@@ -4,7 +4,8 @@
   "description": "Manage scheduled tasks in-process using cron definitions",
   "main": "lib/jscron.js",
   "scripts": {
-    "prepack": "npx grunt clean build"
+    "prepack": "npx grunt clean build",
+    "check": "npx eslint . && npx tsc --noEmit"
   },
   "repository": {
     "type": "git",
